@@ -22,10 +22,6 @@ const footerLinks = {
   ],
 };
 
-function scrollTo(id: string) {
-  const el = document.querySelector(id);
-  if (el) el.scrollIntoView({ behavior: 'smooth' });
-}
 
 export function V2Footer() {
   return (
@@ -42,8 +38,8 @@ export function V2Footer() {
           <div>
             <a
               href="#"
-              onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
-              className="inline-flex items-center gap-3 group"
+              onClick={(e) => e.preventDefault()}
+              className="inline-flex items-center gap-3 group cursor-pointer"
             >
               <Image
                 src="/logo png.png"
@@ -99,14 +95,9 @@ export function V2Footer() {
                 {links.map((link) => (
                   <li key={link.label}>
                     <a
-                      href={link.href}
-                      onClick={(e) => {
-                        if (link.href.startsWith('#')) {
-                          e.preventDefault();
-                          scrollTo(link.href);
-                        }
-                      }}
-                      className="text-xs transition-colors"
+                      href="#"
+                      onClick={(e) => e.preventDefault()}
+                      className="text-xs transition-colors cursor-pointer"
                       style={{ color: 'rgba(255,255,255,0.32)' }}
                       onMouseEnter={(e) => (e.currentTarget.style.color = '#d4a94e')}
                       onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(255,255,255,0.32)')}
