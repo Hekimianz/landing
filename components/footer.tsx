@@ -15,7 +15,6 @@ const footerLinks = {
     { label: 'Telemetry', href: '#technology' },
   ],
   Company: [
-    { label: 'Harvard Innovation Labs', href: '#' },
     { label: 'Request Demo', href: '/login' },
     { label: 'Contact', href: 'mailto:contact@physaflow.com' },
   ],
@@ -38,8 +37,8 @@ export function Footer() {
               <Image
                 src="/logo png.png"
                 alt="PhysaFlow"
-                width={38}
-                height={38}
+                width={49}
+                height={49}
                 className="rounded-sm transition-all group-hover:scale-105"
               />
               <span
@@ -56,17 +55,6 @@ export function Footer() {
               Helping data centers get more capacity out of what they already have —
               more AI, lower costs, sustainable scale.
             </p>
-            {/* Harvard badge */}
-            <div
-              className="mt-6 inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-xs font-semibold"
-              style={{
-                border: '1px solid rgba(162,126,45,0.3)',
-                background: 'rgba(162,126,45,0.08)',
-                color: '#a27e2d',
-              }}
-            >
-              Harvard Innovation Labs
-            </div>
           </div>
 
           {/* Link columns */}
@@ -106,14 +94,6 @@ export function Footer() {
           >
             &copy; {new Date().getFullYear()} PhysaFlow. All rights reserved.
           </p>
-          <div className="flex items-center gap-4">
-            <p
-              className="text-xs"
-              style={{ color: 'rgba(255,255,255,0.2)' }}
-            >
-              Harvard Innovation Labs
-            </p>
-          </div>
         </div>
       </div>
     </footer>

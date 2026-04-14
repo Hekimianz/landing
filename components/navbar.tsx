@@ -46,8 +46,8 @@ export function Navbar() {
           <Image
             src="/logo png.png"
             alt="PhysaFlow"
-            width={58}
-            height={58}
+            width={75}
+            height={75}
             className="rounded-sm transition-all group-hover:scale-105"
           />
           <span className="text-lg font-bold tracking-tight text-white">PhysaFlow</span>

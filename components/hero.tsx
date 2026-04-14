@@ -122,7 +122,7 @@ export function Hero() {
             className="h-1.5 w-1.5 rounded-full animate-pulse"
             style={{ backgroundColor: '#d4a94e' }}
           />
-          Harvard Innovation Labs · Demo Day Cohort
+          PhysaFlow · Your Infrastructure, Amplified
         </div>
 
         {/* Headline */}
