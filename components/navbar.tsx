@@ -37,20 +37,26 @@ export function Navbar() {
               borderBottom: '1px solid rgba(26,107,79,0.35)',
               boxShadow: '0 4px 30px rgba(0,0,0,0.3)',
             }
-          : { background: 'transparent' }
+          : { background: 'rgba(0,0,0,0.35)' }
       }
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         {/* Logo */}
-        <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="flex items-center gap-3 group">
+        <a
+          href="#"
+          onClick={(e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }}
+          className="flex items-center gap-3 group"
+        >
           <Image
-            src="/logo png.png"
+            src="/logo hor.png"
             alt="PhysaFlow"
-            width={75}
-            height={75}
+            width={200}
+            height={200}
             className="rounded-sm transition-all group-hover:scale-105"
           />
-          <span className="text-lg font-bold tracking-tight text-white">PhysaFlow</span>
         </a>
 
         {/* Desktop nav */}
@@ -59,11 +65,16 @@ export function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              onClick={(e) => { e.preventDefault(); scrollTo(link.href); }}
+              onClick={(e) => {
+                e.preventDefault();
+                scrollTo(link.href);
+              }}
               className="text-sm font-medium transition-colors"
               style={{ color: 'rgba(255,255,255,0.6)' }}
               onMouseEnter={(e) => (e.currentTarget.style.color = '#d4a94e')}
-              onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(255,255,255,0.6)')}
+              onMouseLeave={(e) =>
+                (e.currentTarget.style.color = 'rgba(255,255,255,0.6)')
+              }
             >
               {link.label}
             </a>
@@ -84,7 +95,9 @@ export function Navbar() {
             <span className="relative z-10">Request a Demo</span>
             <div
               className="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-              style={{ background: 'linear-gradient(135deg, #d4a94e, #a27e2d)' }}
+              style={{
+                background: 'linear-gradient(135deg, #d4a94e, #a27e2d)',
+              }}
             />
           </a>
         </div>
@@ -96,7 +109,11 @@ export function Navbar() {
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
         >
-          {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          {mobileOpen ? (
+            <X className="h-6 w-6" />
+          ) : (
+            <Menu className="h-6 w-6" />
+          )}
         </button>
       </div>
 
@@ -115,7 +132,11 @@ export function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
-                onClick={(e) => { e.preventDefault(); setMobileOpen(false); scrollTo(link.href); }}
+                onClick={(e) => {
+                  e.preventDefault();
+                  setMobileOpen(false);
+                  scrollTo(link.href);
+                }}
                 className="text-sm font-medium transition-colors"
                 style={{ color: 'rgba(255,255,255,0.65)' }}
               >
@@ -126,7 +147,9 @@ export function Navbar() {
               href="#"
               onClick={(e) => e.preventDefault()}
               className="mt-2 rounded-lg px-5 py-3 text-center text-sm font-bold text-white"
-              style={{ background: 'linear-gradient(135deg, #a27e2d, #d4a94e)' }}
+              style={{
+                background: 'linear-gradient(135deg, #a27e2d, #d4a94e)',
+              }}
             >
               Request a Demo
             </a>

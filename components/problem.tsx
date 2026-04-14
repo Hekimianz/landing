@@ -6,7 +6,7 @@ import { Droplets, Zap, Clock } from 'lucide-react';
 const problems = [
   {
     icon: Droplets,
-    accentColor: '#3b82f6',
+    accentColor: '#d4a94e',
     title: 'Cooling & Water Crisis',
     bigStat: '⅔',
     statCaption: 'of US data centers far from reliable water sources',
@@ -22,7 +22,7 @@ const problems = [
   },
   {
     icon: Clock,
-    accentColor: '#e74c3c',
+    accentColor: '#d4a94e',
     title: "Supply Can't Keep Up",
     bigStat: '5 yrs',
     statCaption: 'to build a new hyperscale facility — even for the biggest players',
@@ -163,8 +163,8 @@ export function Problem() {
           <div
             className="rounded-2xl px-8 py-6 text-center"
             style={{
-              border: '1px solid rgba(231,76,60,0.3)',
-              background: 'rgba(231,76,60,0.07)',
+              border: '1px solid rgba(212,169,78,0.3)',
+              background: 'rgba(212,169,78,0.07)',
             }}
           >
             <p
@@ -172,9 +172,9 @@ export function Problem() {
               style={{ color: 'rgba(255,255,255,0.75)' }}
             >
               So demand is exploding, but supply can't keep up —{' '}
-              <span style={{ color: '#e74c3c' }}>creating a massive bottleneck.</span>{' '}
+              <span style={{ color: '#d4a94e' }}>creating a massive bottleneck.</span>{' '}
               Without solving this, many AI projects risk becoming{' '}
-              <span style={{ color: '#e74c3c' }}>dead in the water.</span>
+              <span style={{ color: '#d4a94e' }}>dead in the water.</span>
             </p>
           </div>
         </AnimatedSection>

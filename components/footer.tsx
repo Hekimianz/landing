@@ -35,7 +35,7 @@ export function Footer() {
           <div>
             <a href="#" onClick={(e) => e.preventDefault()} className="inline-flex items-center gap-3 group">
               <Image
-                src="/logo png.png"
+                src="/logo hor.png"
                 alt="PhysaFlow"
                 width={49}
                 height={49}
