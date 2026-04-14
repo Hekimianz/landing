@@ -61,10 +61,10 @@ function CounterCard({
     : count;
 
   return (
-    <AnimatedSection delay={delay}>
+    <AnimatedSection delay={delay} className="h-full">
       <div
         ref={ref}
-        className="group relative overflow-hidden rounded-2xl p-px transition-all duration-300 hover:-translate-y-1"
+        className="group relative h-full overflow-hidden rounded-2xl p-px transition-all duration-300 hover:-translate-y-1"
         style={{
           background: 'linear-gradient(135deg, rgba(162,126,45,0.5), rgba(26,107,79,0.3), rgba(212,169,78,0.2))',
         }}

@@ -51,7 +51,8 @@ export function Hero() {
       <div
         className="pointer-events-none absolute inset-x-0 bottom-0 h-48"
         style={{
-          background: 'linear-gradient(to bottom, transparent, rgba(0,46,31,0.5))',
+          background:
+            'linear-gradient(to bottom, transparent, rgba(0,46,31,0.5))',
         }}
       />
 
@@ -107,11 +108,10 @@ export function Hero() {
       ))}
 
       {/* ── Main content ── */}
-      <div className="relative mx-auto flex max-w-7xl flex-1 flex-col items-center justify-center px-6 py-36 text-center">
-
+      <div className="relative mx-auto flex max-w-7xl flex-1 flex-col items-center justify-center px-4 pt-40 pb-16 text-center sm:px-6 sm:py-36">
         {/* Badge */}
         <div
-          className="mb-8 inline-flex items-center gap-2.5 rounded-full px-5 py-2 text-xs font-bold uppercase tracking-widest"
+          className="mb-8 inline-flex items-center gap-2 rounded-full px-4 py-2 text-[10px] font-bold uppercase tracking-wider sm:gap-2.5 sm:px-5 sm:text-xs sm:tracking-widest"
           style={{
             border: '1px solid rgba(212,169,78,0.4)',
             background: 'rgba(162,126,45,0.12)',
@@ -119,7 +119,7 @@ export function Hero() {
           }}
         >
           <span
-            className="h-1.5 w-1.5 rounded-full animate-pulse"
+            className="h-1.5 w-1.5 shrink-0 rounded-full animate-pulse"
             style={{ backgroundColor: '#d4a94e' }}
           />
           PhysaFlow · Your Infrastructure, Amplified
@@ -127,11 +127,10 @@ export function Hero() {
 
         {/* Headline */}
         <h1
-          className="max-w-5xl text-5xl font-extrabold leading-[1.04] tracking-tight sm:text-6xl lg:text-[5rem] xl:text-[5.75rem]"
+          className="max-w-5xl text-4xl font-extrabold leading-[1.04] tracking-tight sm:text-5xl md:text-6xl lg:text-[5rem] xl:text-[5.75rem]"
           style={{ color: '#ffffff' }}
         >
-          More Capacity{' '}
-          <br />
+          More Capacity <br />
           <span className="animate-shimmer">From What You</span>
           <br />
           <span style={{ color: '#ffffff' }}>Already Have</span>
@@ -140,7 +139,10 @@ export function Hero() {
         {/* Divider line */}
         <div
           className="my-8 h-px w-24"
-          style={{ background: 'linear-gradient(90deg, transparent, #a27e2d, transparent)' }}
+          style={{
+            background:
+              'linear-gradient(90deg, transparent, #a27e2d, transparent)',
+          }}
         />
 
         {/* Subtitle */}
@@ -148,16 +150,17 @@ export function Hero() {
           className="max-w-2xl text-lg leading-relaxed sm:text-xl"
           style={{ color: 'rgba(255,255,255,0.58)' }}
         >
-          PhysaFlow is a SaaS that helps data centers get more capacity out of what they already
-          have — making the digital and physical sides of your facility work together in real time.
+          PhysaFlow is a SaaS that helps data centers get more capacity out of
+          what they already have — making the digital and physical sides of your
+          facility work together in real time.
         </p>
 
         {/* CTAs */}
-        <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
+        <div className="mt-10 flex w-full flex-col items-center justify-center gap-3 sm:w-auto sm:flex-row sm:gap-4">
           <a
             href="#"
             onClick={(e) => e.preventDefault()}
-            className="group relative inline-flex items-center gap-2.5 overflow-hidden rounded-xl px-8 py-4 text-base font-bold text-white transition-all hover:-translate-y-0.5 hover:shadow-2xl"
+            className="group relative inline-flex w-full items-center justify-center gap-2.5 overflow-hidden rounded-xl px-8 py-4 text-base font-bold text-white transition-all hover:-translate-y-0.5 hover:shadow-2xl sm:w-auto"
             style={{
               background: 'linear-gradient(135deg, #a27e2d 0%, #d4a94e 100%)',
               boxShadow: '0 8px 32px rgba(162,126,45,0.35)',
@@ -168,14 +171,12 @@ export function Hero() {
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </span>
             {/* Shimmer overlay */}
-            <div
-              className="absolute inset-0 -translate-x-full skew-x-12 bg-white/20 transition-transform duration-700 group-hover:translate-x-full"
-            />
+            <div className="absolute inset-0 -translate-x-full skew-x-12 bg-white/20 transition-transform duration-700 group-hover:translate-x-full" />
           </a>
           <a
             href="#"
             onClick={(e) => e.preventDefault()}
-            className="inline-flex items-center gap-2 rounded-xl px-8 py-4 text-base font-semibold transition-all hover:-translate-y-0.5"
+            className="inline-flex w-full items-center justify-center gap-2 rounded-xl px-8 py-4 text-base font-semibold transition-all hover:-translate-y-0.5 sm:w-auto"
             style={{
               border: '1px solid rgba(255,255,255,0.14)',
               background: 'rgba(255,255,255,0.05)',
@@ -200,13 +201,13 @@ export function Hero() {
             {stats.map((stat, i) => (
               <div
                 key={stat.label}
-                className="flex flex-col items-center px-6 py-5 text-center"
+                className="flex flex-col items-center px-3 py-4 text-center sm:px-6 sm:py-5"
                 style={{
                   borderRight: i < 2 ? '1px solid rgba(26,107,79,0.4)' : 'none',
                 }}
               >
                 <span
-                  className="text-3xl font-extrabold sm:text-4xl"
+                  className="text-2xl font-extrabold sm:text-3xl md:text-4xl"
                   style={{
                     background: 'linear-gradient(135deg, #a27e2d, #d4a94e)',
                     WebkitBackgroundClip: 'text',
@@ -217,7 +218,7 @@ export function Hero() {
                   {stat.value}
                 </span>
                 <span
-                  className="mt-1 text-[10px] leading-tight sm:text-xs"
+                  className="mt-1 text-[9px] leading-tight sm:text-[10px] md:text-xs"
                   style={{ color: 'rgba(255,255,255,0.38)' }}
                 >
                   {stat.label}
