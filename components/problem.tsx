@@ -125,26 +125,27 @@ export function Problem() {
                     <item.icon className="h-6 w-6" style={{ color: item.accentColor }} />
                   </div>
 
-                  {/* Big stat */}
+                  {/* Title */}
+                  <h3
+                    className="mb-4 text-lg font-bold"
+                    style={{ color: item.accentColor }}
+                  >
+                    {item.title}
+                  </h3>
+
+                  {/* Stat */}
                   <div
                     className="mb-1 text-3xl font-extrabold sm:text-4xl"
-                    style={{ color: item.accentColor }}
+                    style={{ color: '#ffffff' }}
                   >
                     {item.bigStat}
                   </div>
                   <p
                     className="mb-5 text-[11px] font-semibold uppercase tracking-wide"
-                    style={{ color: `${item.accentColor}70` }}
+                    style={{ color: 'rgba(255,255,255,0.38)' }}
                   >
                     {item.statCaption}
                   </p>
-
-                  <h3
-                    className="mb-3 text-lg font-bold"
-                    style={{ color: '#ffffff' }}
-                  >
-                    {item.title}
-                  </h3>
                   <p
                     className="text-sm leading-relaxed"
                     style={{ color: 'rgba(255,255,255,0.48)' }}

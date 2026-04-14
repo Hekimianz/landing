@@ -38,8 +38,8 @@ export function Footer() {
               <Image
                 src="/logo png.png"
                 alt="PhysaFlow"
-                width={32}
-                height={32}
+                width={38}
+                height={38}
                 className="rounded-sm transition-all group-hover:scale-105"
               />
               <span
