@@ -9,7 +9,7 @@ const features = [
     tag: 'AI Engine',
     title: 'BioCore AI',
     description:
-      'A purpose-built AI engine inspired by biological swarm intelligence. BioCore unifies cooling, power, and thermal signals into a single optimization model that reacts in real time — no central bottleneck, just distributed intelligence.',
+      'A purpose-built AI engine inspired in nature intelligence. BioCore unifies cooling, power, and thermal signals into a single optimization model that reacts in real time — no central bottleneck, just distributed intelligence.',
     highlight: true,
   },
   {

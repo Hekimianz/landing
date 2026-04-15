@@ -109,22 +109,6 @@ export function Hero() {
 
       {/* ── Main content ── */}
       <div className="relative mx-auto flex max-w-7xl flex-1 flex-col items-center justify-center px-4 pt-40 pb-16 text-center sm:px-6 sm:py-36 lg:pt-52">
-        {/* Badge */}
-        <div
-          className="mb-8 inline-flex items-center gap-2 rounded-full px-4 py-2 text-[10px] font-bold uppercase tracking-wider sm:gap-2.5 sm:px-5 sm:text-xs sm:tracking-widest"
-          style={{
-            border: '1px solid rgba(212,169,78,0.4)',
-            background: 'rgba(162,126,45,0.12)',
-            color: '#d4a94e',
-          }}
-        >
-          <span
-            className="h-1.5 w-1.5 shrink-0 rounded-full animate-pulse"
-            style={{ backgroundColor: '#d4a94e' }}
-          />
-          PhysaFlow · Your Infrastructure, Amplified
-        </div>
-
         {/* Headline */}
         <h1
           className="max-w-5xl text-4xl font-extrabold leading-[1.04] tracking-tight sm:text-5xl md:text-6xl lg:text-[5rem] xl:text-[5.75rem]"

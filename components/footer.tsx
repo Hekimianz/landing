@@ -33,20 +33,14 @@ export function Footer() {
 
           {/* Brand column */}
           <div>
-            <a href="#" onClick={(e) => e.preventDefault()} className="inline-flex items-center gap-3 group">
+            <a href="#" onClick={(e) => e.preventDefault()} className="inline-flex items-center group">
               <Image
                 src="/logo hor.png"
                 alt="PhysaFlow"
-                width={49}
-                height={49}
+                width={200}
+                height={200}
                 className="rounded-sm transition-all group-hover:scale-105"
               />
-              <span
-                className="text-lg font-bold tracking-tight"
-                style={{ color: '#ffffff' }}
-              >
-                PhysaFlow
-              </span>
             </a>
             <p
               className="mt-4 max-w-xs text-sm leading-relaxed"

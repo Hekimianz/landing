@@ -53,8 +53,8 @@ export function Navbar() {
           <Image
             src="/logo hor.png"
             alt="PhysaFlow"
-            width={200}
-            height={200}
+            width={260}
+            height={260}
             className="rounded-sm transition-all group-hover:scale-105"
           />
         </a>
