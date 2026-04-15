@@ -108,8 +108,7 @@ export function Cta() {
         {/* CTA buttons */}
         <div className="mt-12 flex flex-wrap items-center justify-center gap-4">
           <a
-            href="#"
-            onClick={(e) => e.preventDefault()}
+            href="mailto:gonzalo@physaflow.com"
             className="group relative inline-flex items-center gap-2.5 overflow-hidden rounded-xl px-10 py-4 text-base font-bold text-white transition-all hover:-translate-y-0.5 hover:shadow-2xl"
             style={{
               background: 'linear-gradient(135deg, #a27e2d 0%, #d4a94e 100%)',
@@ -125,8 +124,7 @@ export function Cta() {
             />
           </a>
           <a
-            href="#"
-            onClick={(e) => e.preventDefault()}
+            href="mailto:gonzalo@physaflow.com"
             className="inline-flex items-center gap-2 rounded-xl px-10 py-4 text-base font-semibold transition-all hover:-translate-y-0.5"
             style={{
               border: '1px solid rgba(255,255,255,0.15)',

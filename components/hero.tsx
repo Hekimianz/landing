@@ -158,8 +158,7 @@ export function Hero() {
         {/* CTAs */}
         <div className="mt-10 flex w-full flex-col items-center justify-center gap-3 sm:w-auto sm:flex-row sm:gap-4">
           <a
-            href="#"
-            onClick={(e) => e.preventDefault()}
+            href="mailto:gonzalo@physaflow.com"
             className="group relative inline-flex w-full items-center justify-center gap-2.5 overflow-hidden rounded-xl px-8 py-4 text-base font-bold text-white transition-all hover:-translate-y-0.5 hover:shadow-2xl sm:w-auto"
             style={{
               background: 'linear-gradient(135deg, #a27e2d 0%, #d4a94e 100%)',

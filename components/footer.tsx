@@ -15,8 +15,8 @@ const footerLinks = {
     { label: 'Telemetry', href: '#technology' },
   ],
   Company: [
-    { label: 'Request Demo', href: '/login' },
-    { label: 'Contact', href: 'mailto:contact@physaflow.com' },
+    { label: 'Request Demo', href: 'mailto:gonzalo@physaflow.com' },
+    { label: 'Contact', href: 'mailto:gonzalo@physaflow.com' },
   ],
 };
 
@@ -70,8 +70,7 @@ export function Footer() {
                 {links.map((link) => (
                   <li key={link.label}>
                     <a
-                      href="#"
-                      onClick={(e) => e.preventDefault()}
+                      href={link.href}
                       className="text-sm transition-colors text-white/40 hover:text-[#d4a94e]"
                     >
                       {link.label}

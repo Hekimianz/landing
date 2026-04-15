@@ -84,8 +84,7 @@ export function Navbar() {
         {/* CTA */}
         <div className="hidden md:flex items-center gap-4">
           <a
-            href="#"
-            onClick={(e) => e.preventDefault()}
+            href="mailto:gonzalo@physaflow.com"
             className="group relative overflow-hidden rounded-lg px-5 py-2.5 text-sm font-bold text-white transition-all hover:-translate-y-0.5"
             style={{
               background: 'linear-gradient(135deg, #a27e2d, #d4a94e)',
@@ -144,8 +143,7 @@ export function Navbar() {
               </a>
             ))}
             <a
-              href="#"
-              onClick={(e) => e.preventDefault()}
+              href="mailto:gonzalo@physaflow.com"
               className="mt-2 rounded-lg px-5 py-3 text-center text-sm font-bold text-white"
               style={{
                 background: 'linear-gradient(135deg, #a27e2d, #d4a94e)',
