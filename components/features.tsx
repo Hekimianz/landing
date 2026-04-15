@@ -18,7 +18,7 @@ const features = [
     title: 'Multi-Layer',
     description:
       'PhysaFlow bridges every layer of the stack — from server workloads and rack thermals to facility-wide cooling and power distribution. It dynamically shifts resources across all of them to eliminate waste.',
-    highlight: false,
+    highlight: true,
   },
   {
     icon: ShieldCheck,
@@ -26,7 +26,7 @@ const features = [
     title: 'Shadow Mode',
     description:
       'All recommendations operate in shadow read-only mode by default. PhysaFlow observes and advises without taking any control actions — giving operators full visibility and confidence before enabling automated execution.',
-    highlight: false,
+    highlight: true,
   },
   {
     icon: Eye,
@@ -34,7 +34,7 @@ const features = [
     title: 'Real-Time Telemetry',
     description:
       'Live dashboards powered by server-sent events deliver instant visibility into facility performance. Every metric — energy, thermal, workload, and AI confidence — as it happens, not minutes later.',
-    highlight: false,
+    highlight: true,
   },
 ];
 
