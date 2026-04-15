@@ -11,7 +11,7 @@ import { Footer } from '@/components/footer';
 export default function Page() {
   return (
     <div
-      className="min-h-screen antialiased"
+      className="min-h-screen antialiased lg:pt-8"
       style={{
         fontFamily: 'var(--font-dm-sans), system-ui, sans-serif',
         background: '#003a27',
