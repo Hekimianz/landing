@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: 'PhysaFlow — More Capacity From What You Already Have',
   description:
     'PhysaFlow is a SaaS that helps data centers get more capacity out of what they already have. AI-powered real-time optimization for energy, cooling, and workload.',
+  icons: {
+    icon: '/logo png.png',
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
